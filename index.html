@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>移动端弹出提示框公用</title>
+	<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/dialog.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/dialog.css" />
+	<style type="text/css">
+		button {border:1px solid #666;padding:0 20px;}
+	</style>
+</head>
+<body>
+	<div>
+		<button>提示</button>
+		测试文字<br/>
+		测试文字<br/>
+		测试文字<br/>
+		测试文字<br/>
+		测试文字<br/>测试文字<br/>
+		测试文字<br/>
+		测试文字<br/>
+		测试文字<br/>
+		测试文字<br/>测试文字<br/>
+		测试文字<br/>
+		测试文字<br/>
+		测试文字<br/>
+		测试文字<br/>测试文字<br/>
+		测试文字<br/>
+		测试文字<br/>
+		测试文字<br/>
+		测试文字<br/>测试文字<br/>
+		测试文字<br/>
+		测试文字<br/>
+		测试文字<br/>
+		测试文字<br/>测试文字<br/>
+		测试文字<br/>
+		测试文字<br/>
+		测试文字<br/>
+		测试文字<br/>测试文字<br/>
+		测试文字<br/>
+		测试文字<br/>
+		测试文字<br/>
+		测试文字<br/>测试文字<br/>
+		测试文字<br/>
+		测试文字<br/>
+		测试文字<br/>
+		测试文字<br/>
+	</div>
+</body>
+<script type="text/javascript">
+	$(function(){
+		$('button').click(function(){
+			/*
+			//测试一
+			dialog('弹出框提示测试内容(第一个弹出框)','确认','取消',function(){
+				dialog('弹出框提示测试内容(第二个弹出框)','确认','取消',function(){
+					alert('你点击了“确认”按钮');
+				})
+			});
+			*/
+
+			/*
+			//测试二
+			dialog('弹出框提示测试内容(第一个弹出框)','确认','',function(){
+				dialog('弹出框提示测试内容(第二个弹出框)','确认','取消',function(){
+					alert('你点击了“确认”按钮');
+				})
+			});
+			*/
+
+			//测试三
+			//dialog('弹出框提示测试内容(第一个弹出框)','','');
+
+			/*
+			//测试四
+			dialog('弹出框提示测试内容(第一个弹出框)','确认','取消',function(){
+				dialog('弹出框提示测试内容(第二个弹出框)','','')
+			});
+			*/
+
+			/*
+			//测试五
+			dialog('弹出框提示测试内容(第一个弹出框)','确认','');
+			*/
+
+			dialog('弹出框提示测试内容(第一个弹出框)','好的👌','取消',function(){
+				dialog('<div style="background:lightgreen;text-align:center;padding:20px 0;">弹出框提示测试内容(第二个弹出框)','确认','取消',function(){
+					alert('你点击了“确认”按钮');
+				})
+			});
+		});
+	});
+</script>
+</html>

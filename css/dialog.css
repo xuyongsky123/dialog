@@ -1,0 +1,62 @@
+* {margin:0;padding:0;}
+a {text-decoration: none;}
+
+/* main style */
+.dialog-mobile-cover {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	z-index:100000;
+	background-color: rgba(0,0,0,.7);
+}
+.dialog-mobile-cover:before {
+	content: '';
+	width: 0;
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.dialog-mobile-cover > .dialog-content {
+	display: inline-block;
+	vertical-align: middle;
+	background-color: #fff;
+	width: 80%;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.dialog-mobile-cover > .dialog-content > .dialog-inner-content {
+	overflow: hidden;
+	width: 100%;
+}
+.dialog-btn-container {
+	height: 80px;
+	text-align: center;
+	overflow: hidden;
+}
+.dialog-btn-container:before {
+	content: '';
+	width: 0;
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.dialog-btn-container > a {
+	display: inline-block;
+	height: 36px;
+	line-height: 36px;
+	vertical-align: middle;
+	padding:0 35px;
+	margin:0 15px;
+	color: #fff;
+	background-color: #56a6e7;
+	border-radius: 10px;
+}
+
+
+
+
+
+
